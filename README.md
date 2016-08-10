@@ -1,0 +1,2 @@
+# DETECT_HOG
+# DETECT_HOG
