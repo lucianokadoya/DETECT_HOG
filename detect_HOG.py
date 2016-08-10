@@ -4,7 +4,6 @@
 import numpy as np
 from imutils.object_detection import non_max_suppression
 import cv2
-#import time as tm
 passTotal = 0
 
 def draw_detections(img, rects, thickness = 1):
@@ -24,7 +23,7 @@ if __name__ == '__main__':
 
     hog = cv2.HOGDescriptor()
     hog.setSVMDetector( cv2.HOGDescriptor_getDefaultPeopleDetector() )
-    cap=cv2.VideoCapture(0)
+    cap=cv2.VideoCapture('video2.mp4')
     while True:
         _,frame=cap.read()
         frame2 = frame[100:150, 0:850]
